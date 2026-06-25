@@ -1,0 +1,82 @@
+.organism-random-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-bg);
+}
+
+.organism-random-card--error {
+  background-color: var(--light-bg);
+}
+
+.random-meal-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: randomFadeIn 0.7s ease;
+}
+
+@keyframes randomFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.random-meal-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 30, 20, 0.92) 0%,
+    rgba(20, 30, 20, 0.45) 55%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  color: var(--light-bg);
+}
+
+.random-label {
+  color: rgba(244, 239, 228, 0.55);
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  font-size: 0.65em;
+  text-transform: uppercase;
+}
+
+.random-meal-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 300;
+  color: var(--light-bg);
+  line-height: 1.05;
+  margin-bottom: 16px;
+  word-break: break-word;
+}
+
+.random-meal-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.random-meal-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

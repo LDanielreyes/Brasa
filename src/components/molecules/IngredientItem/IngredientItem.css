@@ -1,0 +1,21 @@
+.molecule-ingredient-item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: var(--light-bg);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.molecule-ingredient-measure {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.molecule-ingredient-name {
+  font-size: 0.9em;
+  color: var(--text);
+  text-transform: capitalize;
+}

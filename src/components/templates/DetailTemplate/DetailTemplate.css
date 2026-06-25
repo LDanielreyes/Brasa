@@ -1,0 +1,27 @@
+.template-detail {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-main-content {
+  flex: 1;
+  padding: 40px 24px;
+}
+
+.detail-back-nav {
+  max-width: 1200px;
+  margin: 0 auto 32px;
+}
+
+.detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .detail-main-content {
+    padding: 24px 16px;
+  }
+}

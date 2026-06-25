@@ -1,0 +1,22 @@
+.organism-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--light-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-logo img {
+  height: 24px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .organism-navbar {
+    padding: 16px 24px;
+  }
+}

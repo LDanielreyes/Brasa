@@ -1,0 +1,14 @@
+.molecule-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.molecule-meta-item--light {
+  color: rgba(244, 239, 228, 0.75);
+}

@@ -1,0 +1,22 @@
+.molecule-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.molecule-search-input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--text);
+  font-size: 0.875em;
+  font-family: var(--font-body);
+  width: 100%;
+  padding: 2px 0;
+}
+
+.molecule-search-input::placeholder {
+  color: var(--tags);
+  font-size: 0.95em;
+}

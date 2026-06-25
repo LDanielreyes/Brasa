@@ -1,0 +1,65 @@
+.organism-recipe-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header fijo ── */
+.recipe-menu-header {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.recipe-menu-title {
+  color: var(--dark-bg);
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-align: center;
+  padding: 28px 24px 20px;
+}
+
+/* Pills de categoría container */
+.category-filter {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 0 16px 14px;
+  scrollbar-width: none;
+}
+
+.category-filter::-webkit-scrollbar {
+  display: none;
+}
+
+/* Barra de búsqueda wrapper */
+.search-wrapper {
+  border-top: 1px solid var(--border);
+}
+
+/* Conteo de resultados */
+.recipe-count {
+  padding: 10px 20px 4px;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--tags);
+}
+
+/* ── Lista scrollable ── */
+.recipe-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 0;
+}
+
+.recipe-list ul {
+  list-style: none;
+}
+
+/* Status fallback (for empty list message that isn't a true error/loader) */
+.menu-status {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.875em;
+  color: var(--tags);
+}

@@ -1,0 +1,124 @@
+.organism-detail-content {
+  background-color: var(--light-bg);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header */
+.detail-header {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: stretch;
+}
+
+.detail-header-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-label {
+  font-size: 0.7em;
+  letter-spacing: 4px;
+  color: var(--tags);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.detail-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  color: var(--dark-bg);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Imagen grande */
+.detail-image-wrapper {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Sections */
+.detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.8em;
+  font-weight: 300;
+  color: var(--dark-bg);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video Btn fallback */
+.detail-video {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.video-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 6px;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.video-btn:hover {
+  background-color: #ff0000;
+  color: white;
+  border-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detail-header {
+    flex-direction: column;
+  }
+  .detail-image-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+  .ingredients-grid {
+    grid-template-columns: 1fr;
+  }
+}

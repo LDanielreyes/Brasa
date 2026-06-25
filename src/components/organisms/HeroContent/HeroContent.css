@@ -1,0 +1,106 @@
+.organism-hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 24px 80px;
+  gap: 0;
+  /* Warm radial glow en el centro — sutil */
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 45%,
+    rgba(200, 164, 92, 0.08) 0%,
+    transparent 70%
+  );
+}
+
+.hero-eyebrow {
+  font-size: 0.7em;
+  letter-spacing: 6px;
+  color: var(--tags);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: clamp(3.8rem, 9vw, 8rem);
+  color: var(--dark-bg);
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+.title-accent {
+  color: var(--accent);
+  font-style: italic;
+  display: block;
+}
+
+.hero-description {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: var(--dark-bg);
+  opacity: 0.6;
+  max-width: 420px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+/* Fila de features */
+.hero-features {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.hero-divider {
+  display: block;
+  width: 1px;
+  height: 16px;
+  background-color: var(--border);
+}
+
+/* Botón scroll custom style over atomic icon button */
+.scroll-down-btn {
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 2.5s ease infinite;
+}
+
+.scroll-down-btn:hover {
+  background-color: var(--accent);
+  color: var(--light-bg);
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .organism-hero-content {
+    padding: 40px 24px 60px;
+  }
+
+  .hero-features {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-divider {
+    display: none;
+  }
+}
