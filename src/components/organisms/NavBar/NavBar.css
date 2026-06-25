@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
   background-color: var(--light-bg);
   position: sticky;
   top: 0;
@@ -11,12 +11,22 @@
 }
 
 .navbar-logo img {
-  height: 44px;
+  height: 70px;
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .organism-navbar {
-    padding: 16px 24px;
+    padding: 10px 24px;
   }
 }
+
+@media (max-width: 600px) {
+  .organism-navbar {
+    padding: 8px 16px;
+  }
+  .navbar-logo img {
+    height: 34px;
+  }
+}
+

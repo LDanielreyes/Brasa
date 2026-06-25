@@ -6,13 +6,17 @@ import './SearchBar.css'
 export function SearchBar({ value, onChange, placeholder = 'Buscar receta...' }) {
   return (
     <div className="molecule-search-bar">
-      <Icon src={searchLogo} alt="Buscar" size="small" />
+      <label htmlFor="recipe-search" className="molecule-search-label">
+        <Icon src={searchLogo} alt="" size="small" />
+      </label>
       <input
+        id="recipe-search"
         className="molecule-search-input"
         type="search"
         placeholder={placeholder}
         value={value}
         onChange={e => onChange(e.target.value)}
+        aria-label="Buscar receta"
       />
     </div>
   )
