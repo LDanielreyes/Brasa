@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import './Loader.css'
 
-export function Loader({ text = 'Cargando...', className = '' }) {
+export function Loader({ text = 'Loading...', className = '' }) {
   return (
     <div className={`atom-loader ${className}`.trim()}>
       <p>{text}</p>

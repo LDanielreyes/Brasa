@@ -25,7 +25,7 @@ export function RandomRecipeCard() {
       <div className="organism-random-card organism-random-card--error">
         <ErrorMessage message={error} />
         <Button variant="outline" onClick={fetchRandom}>
-          Reintentar
+          Retry
         </Button>
       </div>
     )
@@ -44,7 +44,7 @@ export function RandomRecipeCard() {
       />
 
       <div className="random-meal-overlay">
-        <p className="random-label">— RECETA ALEATORIA —</p>
+        <p className="random-label">— RANDOM RECIPE —</p>
         <h2 className="random-meal-title">{meal.strMeal}</h2>
 
         <div className="random-meal-meta">
@@ -54,10 +54,10 @@ export function RandomRecipeCard() {
 
         <div className="random-meal-actions">
           <Button variant="primary" onClick={() => navigate(`/recipe/${meal.idMeal}`)}>
-            Ver receta
+            View recipe
           </Button>
           <Button variant="secondary" onClick={fetchRandom}>
-            Otra receta
+            Another recipe
           </Button>
         </div>
       </div>

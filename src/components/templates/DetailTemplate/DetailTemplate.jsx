@@ -10,14 +10,14 @@ export function DetailTemplate({ children }) {
   return (
     <div className="template-detail">
       <NavBar />
-      
+
       <main className="detail-main-content">
         <div className="detail-back-nav">
           <Button variant="outline" onClick={() => navigate(-1)}>
-            &larr; Volver
+            &larr; Back
           </Button>
         </div>
-        
+
         <div className="detail-container">
           {children}
         </div>

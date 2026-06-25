@@ -11,7 +11,7 @@ export function RecipeDetailPage() {
 
   return (
     <DetailTemplate>
-      {isLoading && <Loader text="Cargando receta..." />}
+      {isLoading && <Loader text="Loading recipe..." />}
       {error && <ErrorMessage message={error} />}
       {!isLoading && !error && recipe && <RecipeDetailContent recipe={recipe} />}
     </DetailTemplate>

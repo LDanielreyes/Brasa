@@ -24,18 +24,18 @@ export function HeroContent() {
       </p>
 
       <div className="hero-features">
-        <FeatureItem iconSrc={iconIngredients} text="Ingredientes" />
+        <FeatureItem iconSrc={iconIngredients} text="Ingredients" />
         <span className="hero-divider" />
-        <FeatureItem iconSrc={iconCollection} text="14 categorías" />
+        <FeatureItem iconSrc={iconCollection} text="14 categories" />
         <span className="hero-divider" />
-        <FeatureItem iconSrc={iconDiscover} text="Receta aleatoria" />
+        <FeatureItem iconSrc={iconDiscover} text="Random recipe" />
       </div>
 
       <Button
         variant="icon"
         className="scroll-down-btn"
         onClick={scrollToRecipes}
-        aria-label="Ver recetas"
+        aria-label="View recipes"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 5v14M19 12l-7 7-7-7" />

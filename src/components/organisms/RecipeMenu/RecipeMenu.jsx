@@ -53,12 +53,12 @@ export function RecipeMenu() {
         {error && <ErrorMessage message={error} />}
 
         {!isLoading && !error && recipes.length === 0 && (
-          <p className="menu-status">No se encontraron recetas</p>
+          <p className="menu-status">No recipes found</p>
         )}
 
         {!isLoading && !error && recipes.length > 0 && (
           <>
-            <p className="recipe-count">{recipes.length} recetas</p>
+            <p className="recipe-count">{recipes.length} recipes</p>
             <ul>
               {recipes.map(recipe => (
                 <RecipeListItem

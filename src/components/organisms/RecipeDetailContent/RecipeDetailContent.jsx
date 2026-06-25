@@ -14,7 +14,7 @@ export function RecipeDetailContent({ recipe }) {
     <article className="organism-detail-content">
       <div className="detail-header">
         <div className="detail-header-info">
-          <p className="detail-label">— RECETA —</p>
+          <p className="detail-label">— RECIPE —</p>
           <h1 className="detail-title">{recipe.strMeal}</h1>
           <div className="detail-meta">
             <MetaItem iconSrc={iconRecipe} label={recipe.strCategory} />
@@ -28,7 +28,7 @@ export function RecipeDetailContent({ recipe }) {
 
       <div className="detail-body">
         <section className="detail-section">
-          <h3 className="section-title">Ingredientes</h3>
+          <h3 className="section-title">Ingredients</h3>
           <div className="ingredients-grid">
             {recipe.ingredients.map((ing, idx) => (
               <IngredientItem key={idx} ingredient={ing.name} measure={ing.measure} />
@@ -37,7 +37,7 @@ export function RecipeDetailContent({ recipe }) {
         </section>
 
         <section className="detail-section">
-          <h3 className="section-title">Instrucciones</h3>
+          <h3 className="section-title">Instructions</h3>
           <div className="instructions-list">
             {recipe.instructions.map((step, idx) => (
               <InstructionStep key={idx} stepNumber={idx + 1} text={step} />
@@ -54,7 +54,7 @@ export function RecipeDetailContent({ recipe }) {
             rel="noopener noreferrer"
             className="video-btn"
           >
-            Ver video en YouTube
+            Watch on YouTube
           </a>
         </div>
       )}

@@ -14,7 +14,7 @@ export function useRecipeDetail(id) {
     setError(null)
     getRecipeById(id)
       .then(raw => {
-        if (!raw) throw new Error('Receta no encontrada')
+        if (!raw) throw new Error('Recipe not found')
         setMeal({
           ...raw,
           ingredients: getIngredients(raw),

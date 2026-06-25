@@ -3,7 +3,7 @@ import { Icon } from '../../atoms/Icon/Icon'
 import searchLogo from '../../../assets/icons/ico-01-buscar.svg'
 import './SearchBar.css'
 
-export function SearchBar({ value, onChange, placeholder = 'Buscar receta...' }) {
+export function SearchBar({ value, onChange, placeholder = 'Search recipe...' }) {
   return (
     <div className="molecule-search-bar">
       <label htmlFor="recipe-search" className="molecule-search-label">
@@ -16,7 +16,7 @@ export function SearchBar({ value, onChange, placeholder = 'Buscar receta...' })
         placeholder={placeholder}
         value={value}
         onChange={e => onChange(e.target.value)}
-        aria-label="Buscar receta"
+        aria-label="Search recipe"
       />
     </div>
   )
