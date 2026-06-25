@@ -66,9 +66,3 @@ src/
 6. **Manejo del DOM Virtual (Prop `key`):** Se asegura una óptima eficiencia de renderizado utilizando el ID exacto de la base de datos de recetas (`idMeal`) al mapear listas.
 7. **Debounce en Búsqueda:** La barra de búsqueda cuenta con un retraso intencional para no saturar la API con una solicitud cada vez que se presiona una tecla.
 
-## Despliegue en Vercel
-
-Este proyecto está optimizado para su rápido despliegue en Vercel. 
-> Recuerda configurar la variable de entorno `VITE_API_URL` en el Dashboard de Vercel antes de realizar el build de producción. 
-
-Revisa la guía detallada: `guia_despliegue_vercel.md`.
