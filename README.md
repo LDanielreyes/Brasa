@@ -27,7 +27,7 @@ Aplicación web interactiva para explorar recetas de cocina. Construida con Reac
    ```bash
    cp .env.example .env
    ```
-   El archivo `.env` ya viene configurado con la URL correcta (`VITE_API_URL=https://www.themealdb.com/api/json/v1/1`). 
+   El archivo `.env` ya viene configurado con la URL correcta (`VITE_API_BASE_URL=https://www.themealdb.com/api/json/v1/1`). 
 
 4. **Levantar el servidor de desarrollo:**
    ```bash
